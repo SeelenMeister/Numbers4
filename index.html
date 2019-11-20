@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-uhut8PejFZO8994oEgm/ZfAv0mW1/b83nczZzSwElbeILxwkN491YQXsCFTE6+nx" crossorigin="anonymous">
+    <script src="app.js"></script>
+</head>
+<body>
+<!-- TOP BAR --> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <p class="navbar-brand">Test Linio Numbers by Ezequiel Azalot</p>
+    <ul class="navbar-nav ml-auto">
+        <a href="https://badabin.net/" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-info">My Website!</button></a>
+        <a href="https://github.com/SeelenMeister/NumbersTest" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-warning">Ver Codigo en GitHub</button></a>
+    </ul>
+</nav>
+<!-- Main -->
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Hi!</h2>
+            <p class="p-2">My first version to solve the challenge was to use the following code:</p>
+        <xmp>
+        <?php
+            for ($i=1; $i<=100; $i++){
+            $tres = 3;
+            $cinco = 5;
+            switch ($i) {
+                case $i % $tres == 0 && $i % $cinco == 0:
+                    echo "Linianos<br>";
+                    break;
+                case $i % $tres == 0:
+                    echo "Linio<br>";
+                    break;
+                case $i % $cinco == 0:
+                    echo "IT<br>";
+                    break;
+                default:
+                    echo $i."<br>";
+                    break;
+                }
+            }
+        ?>
+        </xmp>
+        <p class="p-2">Then I understood that everything was wrong :P</p>
+        <p class="p-2">So I remade it completely 4 times xD</p>        
+        <p class="p-2">Then I implemented javascript-Ajax to format this web page.</p>
+        <button class="btn btn-success btn-block text-center" id="start">Touch me to see the results!</button>
+        </div>
+        <div class="col-md-6">
+            <div class="container p-4">
+                <table class="table table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Results</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+<br>
