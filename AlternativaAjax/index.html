@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-uhut8PejFZO8994oEgm/ZfAv0mW1/b83nczZzSwElbeILxwkN491YQXsCFTE6+nx" crossorigin="anonymous">
+    <script src="app.js"></script>
+</head>
+<body>
+<!-- TOP BAR --> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <p class="navbar-brand">Test Linio Numbers by Ezequiel Azalot</p>
+    <ul class="navbar-nav ml-auto">
+        <a href="https://numbers.badabin.net/" rel="noopener noreferrer"><button type="button" class="btn btn-info">Volver al Site Principal</button></a>
+        <a href="https://github.com/SeelenMeister/NumbersTest" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-warning">Ver Codigo en GitHub</button></a>
+    </ul>
+</nav>
+<!-- Main -->
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Hi!</h2>
+            <p>Esta es otra manera de lograr el resultado <u>sin usar objetos</u>, solo AJAX.</p>
+            <p>Este codigo se encuentra en la carpeta "ALTERNATIVA AJAX" del repositorio de GitHub</p>
+            <button class="btn btn-success btn-block text-center" id="start">Touch me to see the results!</button>
+            
+        </div>
+        <div class="col-md-6">
+        <div class="container p-4">
+            <table class="table table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Results</th>
+                    </tr>
+                </thead>
+                <tbody id="results">
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
