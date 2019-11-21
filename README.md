@@ -1,8 +1,11 @@
 # Numbers4
 
+Dependencies
 ```
 No dependencies required.
 ```
-Install Cypress to run testLinio.spec.js
+Unit Test
 ```
 Test Folder have the TestPage web
+Install and Run CYPRESS to use the testLinio.spec.js
+cypress.io 
