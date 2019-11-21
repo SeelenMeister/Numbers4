@@ -8,15 +8,11 @@ $(document).ready(function(){
 });
 
 function start(){
-    for(let i = 1 ; i <= 100 ; i++){
-        $.ajax({
-            url: "main.php",
-            type: "GET",
-            success: function(response){
-                $('#results').html(response);
-            },
-        });
-
-    }
+    $.ajax({
+        url: "main.php",
+        type: "GET",
+        success: function(response){
+            $('#results').html(response);
+        },
+    });
 }
-
